@@ -11,7 +11,7 @@ request({url, json: true}, (error, {body})=> {
         callback(body.error.info, undefined)
     
     } else {
-        callback(undefined, `${body.current.weather_descriptions} It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees outside, and the humedity is ${body.current.humidity}.`)
+        callback(undefined, `${body.current.weather_descriptions} It is currently ${body.current.temperature} degrees out. It feels like ${body.current.feelslike} degrees outside, and the humedity is ${body.current.humidity}%.`)
     }
 })
 }
